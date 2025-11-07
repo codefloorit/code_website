@@ -207,34 +207,38 @@ export default function Shopify() {
         </motion.section>
 
         {/* 🟢 Call To Action */}
-        <motion.section
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          className="relative text-center rounded-3xl overflow-hidden shadow-lg"
-        >
-          <img
-            src={ctaImage}
-            alt="Shopify CTA"
-            className="w-full h-[400px] object-cover opacity-40 absolute inset-0"
-          />
-          <div className="relative z-10 py-20 px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Build Your Shopify Store?
-            </h2>
-            <p className="text-white mb-6 max-w-2xl mx-auto">
-              Let’s turn your eCommerce dreams into reality — with speed,
-              security, and innovation.
-            </p>
-            <a
-              href="/contact"
-              className="bg-white text-teal-600 px-10 py-3 rounded-xl font-semibold hover:bg-gray-100 transition"
-            >
-              Hire Shopify Developer
-            </a>
-          </div>
-        </motion.section>
+       <motion.section
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className="relative text-center rounded-3xl overflow-hidden shadow-2xl my-12"
+>
+  {/* Background Image */}
+  <img
+    src={ctaImage}
+    alt="Shopify CTA"
+    className="absolute inset-0 w-full h-full object-cover opacity-40"
+  />
+
+  {/* Overlay Content */}
+  <div className="relative z-10 flex flex-col items-center justify-center px-6 py-20 md:py-28 lg:py-32 bg-black/30 backdrop-blur-sm">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+      Ready to Build Your Shopify Store?
+    </h2>
+    <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto px-4">
+      Let’s turn your eCommerce dreams into reality — with speed, security, and
+      innovation.
+    </p>
+    <a
+      href="/contact"
+      className="bg-white text-teal-600 px-8 sm:px-10 py-3 rounded-xl font-semibold text-base sm:text-lg hover:bg-gray-100 transition duration-300 shadow-md"
+    >
+      Hire Shopify Developer
+    </a>
+  </div>
+</motion.section>
+
       </div>
     </PageWrapper>
   );

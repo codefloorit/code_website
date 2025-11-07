@@ -118,7 +118,7 @@ const WebDevelopment = () => {
             {
               title: "Frontend Development",
               desc: "Modern, responsive, and engaging UI using React.js, Next.js, and Tailwind CSS.",
-              img: "https://images.unsplash.com/photo-1581091870621-1f9ad32a0d4b?auto=format&fit=crop&w=600&q=80",
+              img: "https://miro.medium.com/0*F8SCjR_hs3eF8RhV",
             },
             {
               title: "Backend Development",
@@ -128,17 +128,17 @@ const WebDevelopment = () => {
             {
               title: "E-commerce Solutions",
               desc: "Custom online stores built with React, Shopify, and WooCommerce integration.",
-              img: "https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=600&q=80",
+              img: "https://www.orangemantra.com/wp-content/uploads/2025/05/case-study.webp",
             },
             {
               title: "CMS & WordPress",
               desc: "Seamless WordPress and Headless CMS development with full customization.",
-              img: "https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=600&q=80",
+              img: "https://akshartechnologies.com/wp-content/uploads/2019/01/WordPress-Development-Services.jpg",
             },
             {
               title: "Mobile-Friendly Apps",
               desc: "Progressive Web Apps and hybrid solutions that feel native across all devices.",
-              img: "https://images.unsplash.com/photo-1531497865144-0464ef8fb9c7?auto=format&fit=crop&w=600&q=80",
+              img: "https://logisticinfotech.com/wp-content/uploads/2015/04/Mobile-App-Development.jpg",
             },
             {
               title: "Custom Web Portals",
