@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Service1 from "../images/Staticservices1.jpg";
 import Service2 from "../images/Staticservices2.jpg";
 import Service3 from "../images/Staticservices3.jpg";
@@ -198,12 +199,12 @@ const HeadingStaticWebPage = () => {
           Let’s turn your ideas into a professional, responsive, and high-performing 
           static website that grows your business.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-blue-700 px-10 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300"
         >
           Get Started Today
-        </a>
+        </Link>
       </section>
     </div>
   );

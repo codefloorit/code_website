@@ -6,6 +6,7 @@ import Project2 from "../images/portfolio2.png";
 import Project3 from "../images/portfolio3.webp";
 import Project4 from "../images/portfolio4.webp";
 import ClientImg from "../images/portfolioClient.png";
+import { Link } from "react-router-dom";
 
 const PortfolioPage = () => {
   return (
@@ -207,12 +208,12 @@ const PortfolioPage = () => {
           Have an idea or project in mind? Let’s collaborate and craft a
           visually appealing and responsive digital experience.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-[#004a64] px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all"
         >
           Contact Me
-        </a>
+        </Link>
       </section>
     </div>
   );

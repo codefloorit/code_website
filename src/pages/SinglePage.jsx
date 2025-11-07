@@ -4,6 +4,7 @@ import SPA1 from "../images/SPA1.jpg";
 import SPA2 from "../images/SPA2.webp";
 import SPA3 from "../images/SPA3.jpg";
 import SPA4 from "../images/SPA4.jpg";
+import { Link } from "react-router-dom";
 
 const SinglePageApp = () => {
   return (
@@ -193,12 +194,12 @@ const SinglePageApp = () => {
         <p className="max-w-2xl mx-auto mb-6 text-lg">
           Let’s create a high-performing, scalable, and user-friendly single-page web experience for your business.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-[#004a64] px-10 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300"
         >
           Get Started Now
-        </a>
+        </Link>
       </section>
     </div>
   );

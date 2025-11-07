@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import PageWrapper from "../components/PageWrapper";
 
 export default function AppDesign() {
@@ -18,6 +19,8 @@ export default function AppDesign() {
       transition: { duration: 4, repeat: Infinity, repeatType: "loop", ease: "easeInOut" },
     },
   };
+
+  const MotionLink = motion(Link);
 
   return (
     <PageWrapper
@@ -215,13 +218,13 @@ export default function AppDesign() {
           <p className="max-w-2xl mx-auto mb-8">
             Let’s design interactive and high-performing apps that your users will love and remember.
           </p>
-          <motion.a
-            href="/contact"
+          <MotionLink
+             to="/contact"
             whileHover={{ scale: 1.1, boxShadow: "0px 0px 30px rgba(255,255,255,0.5)" }}
             className="bg-white text-teal-600 px-12 py-4 rounded-full font-bold transition-all duration-300 inline-block"
           >
             Start Your Project
-          </motion.a>
+          </MotionLink>
         </motion.section>
       </div>
     </PageWrapper>

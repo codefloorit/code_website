@@ -1,10 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import WPImg1 from "../images/wp1.jpg";
 import WPImg2 from "../images/wp2.jpg";
 import WPImg3 from "../images/wp3.jpg";
 import WPImg4 from "../images/wp4.jpg";
 import WPImg5 from "../images/wp5.jpg";
+
+const MotionLink = motion(Link);
+
 
 const WordPressDevelopment = () => {
   const fadeUp = {
@@ -28,13 +32,14 @@ const WordPressDevelopment = () => {
           Build fast, secure, and SEO-friendly WordPress websites that deliver
           performance and design excellence — powered by Codefloor IT Tech.
         </p>
-        <motion.a
+        <MotionLink
           href="/contact"
           whileHover={{ scale: 1.05 }}
-          className="bg-white text-blue-700 font-semibold py-3 px-10 rounded-lg shadow-lg hover:bg-gray-100 transition"
+          className="inline-block border border-[#00bcd4] px-8 py-3 rounded-full text-white 
+                        hover:bg-[#00bcd4] hover:text-[#003b53] transition-all duration-300"
         >
           Get a Free Consultation
-        </motion.a>
+        </MotionLink>
       </motion.section>
 
       {/* 🟩 About Section */}
@@ -196,13 +201,13 @@ const WordPressDevelopment = () => {
           WordPress experts at <strong>Codefloor IT Tech</strong> will craft
           a solution that’s fast, secure, and scalable.
         </p>
-        <motion.a
-          href="/contact"
+        <MotionLink
+          to="/contact"
           whileHover={{ scale: 1.05 }}
           className="bg-white text-blue-700 py-3 px-10 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition"
         >
           Contact Us Today
-        </motion.a>
+        </MotionLink>
       </motion.section>
     </div>
   );

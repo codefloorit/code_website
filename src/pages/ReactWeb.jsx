@@ -1,6 +1,7 @@
 // src/pages/ReactWeb.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   FaReact,
   FaNodeJs,
@@ -21,7 +22,6 @@ import {
   SiNextdotjs,
   SiFigma,
 } from "react-icons/si";
-import { Link } from "react-router-dom";
 import BgImage from "../images/react-bg.jpg";
 import ReactProject1 from "../images/Reactproject1.jpg";
 import ReactProject2 from "../images/Reactproject2.jpg";

@@ -17,6 +17,7 @@ import feature2 from "../images/shopifyMobile.webp";
 import feature3 from "../images/shopifyai.png";
 import feature4 from "../images/shopifyGlobal.webp";
 import ctaImage from "../images/shopifyCTA.webp";
+import { Link } from "react-router-dom";
 
 export default function Shopify() {
   const fadeUp = {
@@ -148,12 +149,12 @@ export default function Shopify() {
                 {item.title}
               </h3>
               <p className="text-gray-600 mb-4">{item.desc}</p>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-block bg-teal-500 text-white px-6 py-2 rounded-lg hover:bg-teal-600 transition"
               >
                 {item.btn}
-              </a>
+              </Link>
             </div>
           </motion.section>
         ))}
@@ -230,12 +231,12 @@ export default function Shopify() {
       Let’s turn your eCommerce dreams into reality — with speed, security, and
       innovation.
     </p>
-    <a
-      href="/contact"
+    <Link
+      to="/contact"
       className="bg-white text-teal-600 px-8 sm:px-10 py-3 rounded-xl font-semibold text-base sm:text-lg hover:bg-gray-100 transition duration-300 shadow-md"
     >
       Hire Shopify Developer
-    </a>
+    </Link>
   </div>
 </motion.section>
 

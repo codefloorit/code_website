@@ -7,6 +7,7 @@ import Graphic3 from "../images/graphic3.jpg";
 import Graphic4 from "../images/graphics4.jpg";
 import Graphic5 from "../images/graphics5.jpg";
 import Graphic6 from "../images/graphics6.webp";
+import { Link } from "react-router-dom";
 
 export default function GraphicDesign() {
   const fadeInUp = {
@@ -192,12 +193,12 @@ export default function GraphicDesign() {
           <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
             Let’s create a brand identity that leaves a lasting impression.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="bg-[#004a64] text-white px-10 py-3 rounded-xl hover:bg-[#007b8f] transition"
           >
             Start Your Project
-          </a>
+          </Link>
         </motion.section>
 
         {/* FAQ */}

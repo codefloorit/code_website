@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import PageWrapper from "../components/PageWrapper";
+import { Link } from "react-router-dom";
 
 export default function LogoDesign() {
   const fadeInUp = {
@@ -195,12 +196,12 @@ export default function LogoDesign() {
           <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
             Let’s craft a logo that speaks volumes about your brand and builds lasting recognition.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="bg-[#004a64] text-white px-10 py-3 rounded-xl hover:bg-[#007b8f] transition"
           >
             Start Your Project
-          </a>
+          </Link>
         </motion.section>
       </div>
     </PageWrapper>

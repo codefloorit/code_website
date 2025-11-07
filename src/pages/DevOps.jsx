@@ -1,5 +1,6 @@
 // src/pages/DevOpsDevelopment.jsx
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FaAws,
   FaDocker,
@@ -115,12 +116,12 @@ export default function DevOpsDevelopment() {
             </p>
 
             <div className="flex flex-wrap gap-4 animate-fadeInUp delay-200">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="bg-yellow-400 text-[#003b53] font-semibold px-6 py-3 rounded-lg shadow hover:shadow-lg transform hover:-translate-y-1 transition"
               >
                 Get a Free Assessment
-              </a>
+              </Link>
               <a
                 href="#projects"
                 className="border border-white/40 px-5 py-3 rounded-lg hover:bg-white/10 transition"

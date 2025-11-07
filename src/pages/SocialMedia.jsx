@@ -17,6 +17,7 @@ import AdsImg from "../images/smmads.png";
 import StrategyImg from "../images/smmstrategy.jpg";
 import BrandingImg from "../images/smmbranding.jpg";
 import AnalyticsImg from "../images/smmanalytics.png";
+import { Link } from "react-router-dom";
 
 
 const SocialMediaMarketing = () => {
@@ -189,12 +190,12 @@ const SocialMediaMarketing = () => {
           Connect with our team today to develop a powerful social strategy that enhances visibility,
           strengthens relationships, and drives long-term success.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-[#004a64] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#03617f] transition"
         >
           Get a Free Consultation
-        </a>
+        </Link>
       </section>
     </div>
   );

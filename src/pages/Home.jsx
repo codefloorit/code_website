@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import AppDevImage1 from "../images/homeService1.jpg";
 import AppDevImage2 from "../images/homeService2.jpg";
 import AppDevImage3 from "../images/heroService3.jpg";
@@ -84,6 +85,9 @@ const industries = [
     transition: { delay: i * 0.1, duration: 0.6, ease: "easeOut" },
   }),
 };
+
+const MotionLink = motion(Link);
+
 
   const techs = [
     { icon: FaReact, name: "React" },
@@ -268,14 +272,15 @@ const Home = () => {
             >
               Explore Our Services
             </motion.a>
-            <motion.a
-              href="/contact"
-              whileHover={{ scale: 1.1 }}
+           <MotionLink
+              to="/contact"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="border border-[#00bcd4] px-8 py-3 rounded-full text-white hover:bg-[#00bcd4] hover:text-[#003b53] transition-all"
-            >
-              Get in Touch
-            </motion.a>
+              className="inline-block border border-[#00bcd4] px-8 py-3 rounded-full text-white 
+                        hover:bg-[#00bcd4] hover:text-[#003b53] transition-all duration-300"
+         >
+          Get in Touch
+         </MotionLink>
           </div>
         </motion.div>
 
@@ -731,7 +736,7 @@ const Home = () => {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
           <h2 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
           <p className="text-gray-300 mb-8">Contact us now to discuss your ideas and get a free consultation.</p>
-          <a href="/contact" className="bg-[#00bcd4] text-[#003b53] px-8 py-3 rounded-lg font-semibold hover:scale-105 hover:shadow-xl transition-all duration-300">Get Free Consultation</a>
+          <Link to="/contact" className="bg-[#00bcd4] text-[#003b53] px-8 py-3 rounded-lg font-semibold hover:scale-105 hover:shadow-xl transition-all duration-300">Get Free Consultation</Link>
         </motion.div>
       </section>
 

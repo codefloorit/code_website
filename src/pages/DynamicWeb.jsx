@@ -4,6 +4,7 @@ import Dynamic1 from "../images/Dynamic1.png";
 import Dynamic2 from "../images/Dynamic2.jpg";
 import Dynamic3 from "../images/Dynamic3.webp";
 import Dynamic4 from "../images/Dynamic4.png";
+import { Link } from "react-router-dom";
 
 const HeadingDynamicWebPage = () => {
   return (
@@ -214,12 +215,12 @@ const HeadingDynamicWebPage = () => {
           Let’s develop a fully customized, interactive, and data-driven website
           that scales with your business growth.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-[#004a64] px-10 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300"
         >
           Get Started Now
-        </a>
+        </Link>
       </section>
     </div>
   );

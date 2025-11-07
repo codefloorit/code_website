@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import PageWrapper from "../components/PageWrapper";
 import { Shield, Zap, Cpu, Layers, Globe, Store, Users } from "lucide-react";
 
@@ -10,6 +11,9 @@ import WooTeam from "../images/wooTeam.webp";
 import WooClient from "../images/wooClient.webp";
 
 export default function WooCommerce() {
+
+  const MotionLink = motion(Link);
+
   const services = [
     {
       icon: <Zap className="w-10 h-10 text-[#004a64]" />,
@@ -37,6 +41,7 @@ export default function WooCommerce() {
     },
   ];
 
+
   return (
     <PageWrapper
       title="WooCommerce Development"
@@ -60,13 +65,13 @@ export default function WooCommerce() {
         <p>
           Our WooCommerce solutions are not just about selling — they’re about engaging, converting, and retaining customers through smooth functionality and clean UI/UX.
         </p>
-        <motion.a
-          href="/contact"
+        <MotionLink
+          to="/contact"
           className="inline-block mt-6 bg-[#004a64] text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-2xl transition-transform hover:scale-105"
           whileHover={{ scale: 1.05 }}
         >
           Let’s Talk Now
-        </motion.a>
+        </MotionLink>
       </motion.div>
 
       {/* Services Section */}
@@ -150,12 +155,12 @@ export default function WooCommerce() {
         <p className="text-lg mb-8 max-w-3xl mx-auto">
           Partner with <span className="font-semibold">Codefloor IT</span> to create a customized WooCommerce store that performs flawlessly and delivers outstanding user experience.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="bg-white text-[#004a64] px-10 py-4 rounded-full font-bold hover:shadow-2xl hover:scale-105 transition-transform"
         >
           Hire WooCommerce Expert
-        </a>
+        </Link>
       </motion.div>
     </PageWrapper>
   );

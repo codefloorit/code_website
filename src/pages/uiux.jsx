@@ -4,6 +4,7 @@ import UIUX1 from "../images/UIUX1.jpg";
 import UIUX2 from "../images/UIUX2.jpg";
 import UIUX3 from "../images/UIUX3.jpg";
 import UIUX4 from "../images/UIUX4.png";
+import { Link } from "react-router-dom";
 
 const UIUXDesignPage = () => {
   return (
@@ -177,12 +178,12 @@ const UIUXDesignPage = () => {
         <p className="max-w-2xl mx-auto mb-6 text-lg">
           Partner with us to design stunning, user-focused interfaces that connect with your audience and enhance engagement.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-[#004a64] px-10 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300"
         >
           Let’s Start Your Project
-        </a>
+        </Link>
       </section>
     </div>
   );

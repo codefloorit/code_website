@@ -1,5 +1,6 @@
 // src/pages/PHPWeb.jsx
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FaPhp,
   FaDatabase,
@@ -110,12 +111,12 @@ export default function PHPWeb() {
             <p className="mb-8 text-lg md:text-xl">
               We craft dynamic, scalable, and secure PHP websites and web applications to power your business online.
             </p>
-            <a
-            href="/contact"
+            <Link
+            to="/contact"
             className="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold hover:bg-purple-700 hover:text-white transition duration-500 shadow-lg animate-bounce"
             >
               Get Started
-            </a>
+            </Link>
           </div>
           <div className="flex-1 animate-fadeInRight">
             <img
@@ -278,12 +279,12 @@ export default function PHPWeb() {
         <p className="mb-8 text-lg md:text-xl">
           Contact us today and let's start developing your custom PHP web solution.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-purple-700 px-8 py-4 rounded-full font-semibold hover:bg-purple-700 hover:text-white transition duration-500 shadow-lg animate-bounce"
         >
           Get a Quote
-        </a>
+        </Link>
       </section>
     </div>
   );

@@ -6,6 +6,7 @@ import SMOImg from "../images/digitalSMO.png";
 import PPCImg from "../images/digitalPPC.webp";
 import EmailImg from "../images/digitalEmail.jpg";
 import BrandingImg from "../images/digitalBranding.jpg";
+import { Link } from "react-router-dom";
 
 const DigitalMarketing = () => {
   return (
@@ -218,12 +219,12 @@ const DigitalMarketing = () => {
           Let’s craft a winning digital strategy together that helps your brand
           stand out and dominate the market.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-[#004a64] px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all"
         >
           Get Free Consultation
-        </a>
+        </Link>
       </section>
     </div>
   );

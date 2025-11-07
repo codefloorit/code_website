@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const faqs = [
   { q: "What is Flutter app development?", a: "Flutter app development is the process of creating mobile applications using the Flutter framework, known for its cross-platform capabilities." },
@@ -30,12 +31,12 @@ export default function FlutterAppDevelopment() {
           <p className="max-w-3xl mx-auto text-lg md:text-xl mb-6 animate-fadeIn delay-200">
             Take your business to the next level with top-of-the-line Flutter App Development solutions crafted for innovation and performance.
           </p>
-          <a
-          href="/contact"
+          <Link
+          to="/contact"
            className="mt-4 md:mt-8 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-lg shadow-lg transition transform hover:-translate-y-1 hover:scale-105"
           >
             Request a Quote
-          </a>
+          </Link>
         </div>
         {/* Decorative Animated Shapes */}
         <div className="absolute -bottom-12 -left-20 w-64 h-64 bg-yellow-300 rounded-full opacity-30 animate-ping-slow"></div>
@@ -112,12 +113,12 @@ export default function FlutterAppDevelopment() {
         <div className="max-w-3xl mx-auto relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fadeIn">Interested & Want to Talk More?</h2>
           <p className="mb-6 text-lg md:text-xl animate-fadeIn delay-200">Let’s brew something amazing together! Get in touch with our Flutter experts today.</p>
-         <a
-          href="/contact"
+         <Link
+          to="/contact"
           className="inline-block bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-8 py-3 rounded-lg shadow-lg transform hover:-translate-y-1 hover:scale-105 transition"
          >
           Contact Us
-         </a>
+         </Link>
         </div>
         <div className="absolute -bottom-12 -left-20 w-64 h-64 bg-yellow-300 rounded-full opacity-30 animate-ping-slow"></div>
         <div className="absolute -top-16 -right-16 w-72 h-72 bg-white rounded-full opacity-20 animate-spin-slow"></div>

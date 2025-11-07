@@ -6,6 +6,7 @@ import Service1 from "../images/animatedServies1.webp";
 import Service2 from "../images/animatedServies2.png";
 import Service3 from "../images/animatedServies3.jpg";
 import ContactImg from "../images/animatedContact.webp";
+import { Link } from "react-router-dom";
 
 const AnimatedWebApp = () => {
   return (
@@ -147,12 +148,12 @@ const AnimatedWebApp = () => {
             Whether you need an interactive portfolio, animated landing page, or
             a complete web experience — our team can bring it to life with motion and precision.
           </p>
-          <a
-          href="/contact"
+          <Link
+          to="/contact"
           className="bg-[#004a64] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#006b8a] transition-all duration-300"
           >
             Contact Us Now
-          </a>
+          </Link>
         </motion.div>
         <motion.img
           src={ContactImg}

@@ -4,6 +4,7 @@ import Figma1 from "../images/Figma1.png";
 import Figma2 from "../images/Figma2.jpg";
 import Figma3 from "../images/Figma3.jpg";
 import Figma4 from "../images/Figma4.png";
+import { Link } from "react-router-dom";
 
 const FigmaDesignPage = () => {
   return (
@@ -217,12 +218,12 @@ const FigmaDesignPage = () => {
           Partner with our expert designers to build digital experiences that engage,
           inspire, and convert.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-[#004a64] px-10 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300"
         >
           Start Your Figma Project
-        </a>
+        </Link>
       </section>
     </div>
   );

@@ -10,6 +10,7 @@ import SEOImage from "../images/contentseo.jpg";
 import StrategyImage from "../images/contentstrategy.jpg";
 import CampaignImage from "../images/andriodApp.jpg";
 import AnalyticsImage from "../images/contentanalytics.jpg";
+import { Link } from "react-router-dom";
 
 const ContentMarketing = () => {
   return (
@@ -160,12 +161,12 @@ const ContentMarketing = () => {
         >
           Let’s create content that connects, converts, and builds your brand authority. Partner with our expert team to grow your business online.
         </motion.p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-[#004a64] px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
         >
           Get Started Today
-        </a>
+        </Link>
       </section>
     </div>
   );

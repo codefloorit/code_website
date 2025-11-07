@@ -8,6 +8,7 @@ import EcomSecurity from "../images/ecomSecurity.jpeg";
 import EcomUX from "../images/ecomUI.png";
 import EcomTeam from "../images/ecomTeam.webp";
 import EcomStats from "../images/ecomStats.webp";
+import { Link } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -222,12 +223,12 @@ export default function ECommerce() {
           Let’s craft a powerful, AI-driven ecommerce experience built for speed,
           scalability, and measurable success. Partner with Codefloor IT today.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="bg-white text-[#004a64] px-10 py-4 rounded-full font-bold hover:shadow-2xl hover:scale-105 transition-transform"
         >
           Get Free Consultation
-        </a>
+        </Link>
       </motion.div>
     </PageWrapper>
   );

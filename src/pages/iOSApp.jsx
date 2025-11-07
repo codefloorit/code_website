@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FaApple,
   FaReact,
@@ -97,12 +98,12 @@ export default function IOSApp() {
               tailored to your business needs. From concept to launch, our
               team ensures excellence at every step.
             </p>
-            <a
-            href="/contact"
+            <Link
+            to="/contact"
             className="bg-white text-[#003b53] px-6 py-3 rounded-full font-semibold hover:bg-[#00bcd4] hover:text-white transition-all duration-500 shadow-lg"
             >
               Get Started
-            </a>
+            </Link>
           </div>
           <div className="md:w-1/2 flex justify-center">
             <img

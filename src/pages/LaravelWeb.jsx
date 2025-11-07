@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaLaravel, FaPhp, FaDatabase, FaServer, FaCloud, FaCode } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const LaravelDevelopment = () => {
   return (
@@ -26,12 +27,12 @@ const LaravelDevelopment = () => {
             applications using the Laravel framework — tailored perfectly for
             your business needs.
           </p>
-          <a
-          href="/contact"
+          <Link
+          to="/contact"
           className="bg-red-500 hover:bg-red-600 px-8 py-5 rounded-full font-semibold text-white transition duration-300 shadow-lg"
           >
             Get a Free Consultation
-          </a>
+          </Link>
         </motion.div>
       </section>
 
@@ -228,6 +229,12 @@ const LaravelDevelopment = () => {
           From startup ideas to enterprise platforms, we deliver Laravel
           solutions that perform at scale.
         </p>
+         <Link
+          to="/contact"
+          className="bg-red-500 hover:bg-red-600 px-8 py-5 rounded-full font-semibold text-white transition duration-300 shadow-lg"
+          >
+            Get a Free Consultation
+          </Link>
       </section>
     </div>
   );

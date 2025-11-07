@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PageWrapper from "../components/PageWrapper";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronUp, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Maintenance() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -71,12 +72,12 @@ export default function Maintenance() {
 
         {/* --- Call to Action --- */}
         <div className="text-center">
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-block bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-700 transition"
           >
             Schedule Maintenance
-          </a>
+          </Link>
         </div>
 
         
@@ -165,12 +166,12 @@ export default function Maintenance() {
             Work with experts in Ecommerce website maintenance. Get personalized strategy 
             and support to keep your online store at its best.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-500 transition"
           >
             Let’s Talk →
-          </a>
+          </Link>
         </div>
       </motion.div>
     </PageWrapper>

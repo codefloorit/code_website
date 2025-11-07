@@ -4,6 +4,7 @@ import MPA1 from "../images/MPA1.jpg";
 import MPA2 from "../images/MPA2.jpg";
 import MPA3 from "../images/MPA3.jpg";
 import MPA4 from "../images/MPA4.webp";
+import { Link } from "react-router-dom";
 
 const MultiplePageApp = () => {
   return (
@@ -225,12 +226,12 @@ const MultiplePageApp = () => {
           Let’s create a scalable, SEO-optimized, and performance-driven multi-page experience 
           for your business or brand.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-[#004a64] px-10 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300"
         >
           Start Your MPA Project
-        </a>
+        </Link>
       </section>
     </div>
   );

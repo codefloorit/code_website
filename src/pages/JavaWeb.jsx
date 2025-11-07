@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   FaJava,
   FaDatabase,
@@ -39,12 +40,12 @@ const JavaDevelopment = () => {
           <p className="text-lg max-w-3xl mx-auto text-gray-200 mb-8">
             Build secure, scalable, and high-performance web applications with our expert Java development team. From enterprise systems to web apps — we power businesses worldwide.
           </p>
-          <a
-          href="/contact"
+          <Link
+          to="/contact"
           className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-semibold text-white transition duration-300 shadow-lg"
           >
             Get a Free Consultation
-          </a>
+          </Link>
         </motion.div>
       </section>
 
@@ -257,6 +258,12 @@ const JavaDevelopment = () => {
         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
           From startups to enterprises — we turn complex ideas into powerful Java-based solutions. Get in touch to start your next big project.
         </p>
+         <Link
+          to="/contact"
+          className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-semibold text-white transition duration-300 shadow-lg"
+          >
+            Get a Free Consultation
+          </Link>
 
       </section>
     </div>

@@ -9,6 +9,7 @@ import SEOTraffic from "../images/seotraffic.jpg";
 import SEOAudit from "../images/seoaudit.png";
 import SEOReport from "../images/seoreport.jpg";
 import { FaSearch, FaChartLine, FaGlobe, FaBullhorn, FaUserCheck, FaFileAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SEOSetup = () => {
   return (
@@ -143,12 +144,12 @@ const SEOSetup = () => {
         >
           Our SEO setup experts can help you achieve higher visibility, improved traffic, and measurable growth. Start your SEO journey with us today.
         </motion.p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-[#004a64] px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
         >
           Get Your Free SEO Audit
-        </a>
+        </Link>
       </section>
     </div>
   );

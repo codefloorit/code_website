@@ -12,6 +12,7 @@ import {
   FaTools,
   FaStar,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const EmailMarketing = () => {
   const features = [
@@ -217,12 +218,12 @@ const EmailMarketing = () => {
           Take your email marketing strategy to the next level with our
           data-driven campaigns and creative storytelling.
         </p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
         className="bg-white text-[#004a64] px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-md"
         >
           Let’s Get Started
-        </a>
+        </Link>
       </section>
     </div>
   );

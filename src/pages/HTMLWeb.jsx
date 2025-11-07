@@ -17,6 +17,7 @@ import {
   FaStar,
   FaUserCircle,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const WebDevelopment = () => {
   return (
@@ -42,12 +43,12 @@ const WebDevelopment = () => {
             that drive engagement and growth. From startups to enterprises, we
             craft digital experiences that matter.
           </p>
-          <a
-          href="/contact"
+          <Link
+          to="/contact"
           className="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full font-semibold text-white transition duration-300 shadow-lg"
           >
             Get a Free Quote
-          </a>
+          </Link>
         </motion.div>
       </section>
 

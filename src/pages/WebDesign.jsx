@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import PageWrapper from "../components/PageWrapper";
 
 export default function WebDesign() {
@@ -11,6 +12,8 @@ export default function WebDesign() {
       transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" },
     }),
   };
+
+  const MotionLink = motion(Link);
 
   return (
     <PageWrapper
@@ -238,13 +241,15 @@ export default function WebDesign() {
             Work with <strong>CodeFloor IT</strong> to create a visually stunning,
             conversion-driven, and future-ready website.
           </p>
-          <motion.a
-            href="/contact"
-            whileHover={{ scale: 1.05 }}
-            className="bg-[#004a64] text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:bg-[#006a8c] transition-all duration-300"
-          >
-            Get a Free Consultation
-          </motion.a>
+         <MotionLink
+             to="/contact"
+             whileHover={{ scale: 1.05 }}
+             whileTap={{ scale: 0.95 }}
+             className="bg-[#004a64] text-white px-10 py-4 rounded-full font-semibold shadow-lg 
+                 hover:bg-[#006a8c] transition-all duration-300 inline-block"
+         >
+           Get a Free Consultation
+         </MotionLink>
         </motion.section>
       </div>
     </PageWrapper>

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import PageWrapper from "../components/PageWrapper";
 
 export default function ReactNative() {
@@ -182,12 +183,12 @@ export default function ReactNative() {
           <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
             Let's create a cross-platform mobile app that engages users and drives business growth.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="bg-blue-500 text-white px-10 py-3 rounded-xl hover:bg-blue-600 transition"
           >
             Start Your Project
-          </a>
+          </Link>
         </motion.section>
 
         {/* FAQ */}

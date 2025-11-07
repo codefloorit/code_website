@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import androidAppImage from "../images/andriodApp.jpg";
 import { FaAndroid, FaRocket, FaMobileAlt, FaUsers, FaVrCardboard, FaGamepad, FaArrowRight } from "react-icons/fa";
 import androidApp1 from "../images/androidapp1.png";
@@ -43,9 +44,11 @@ export default function AndroidAppDevelopment() {
           <p className="max-w-3xl mx-auto text-xl md:text-2xl mb-8 animate-fadeIn delay-200">
             Delivering Customised, State-of-the-Art Android Apps for Long-Term Business Success.
           </p>
-          <button className="mt-4 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-110 animate-bounce">
+          <Link
+          to="/contact"
+          className="mt-4 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-110 animate-bounce">
             Request a Free Quote
-          </button>
+          </Link>
         </div>
         {/* Animated Shapes */}
         <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-yellow-300 rounded-full opacity-30 animate-pulse"></div>
@@ -137,12 +140,12 @@ export default function AndroidAppDevelopment() {
       <section className="bg-[#003b53] text-white text-center py-20 px-6 relative overflow-hidden">
         <h2 className="text-4xl font-bold mb-4 animate-fadeIn">Build Your Dedicated Android Team</h2>
         <p className="mb-6 text-xl animate-fadeIn delay-200">Get expert Android professionals to bring your app vision to life efficiently and effectively.</p>
-        <a
-        href="/contact"
+        <Link
+        to="/contact"
          className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-8 py-4 rounded-lg shadow-lg transition transform hover:scale-110"
          >
           Contact Us Now
-        </a>
+        </Link>
         <div className="absolute -top-24 -right-24 w-80 h-80 bg-yellow-300 rounded-full opacity-20 animate-spin-slow"></div>
       </section>
 
