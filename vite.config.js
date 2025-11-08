@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
     outDir: 'dist', // ✅ Vercel looks for "dist" by default
+    base: '/', // ✅ ensures correct asset paths
   },
   server: {
     port: 5173, // optional, ensures local dev runs correctly
