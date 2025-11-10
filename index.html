@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../frontend/src/images/logoC.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
      (function (l) {
   // Only run if there is a search string starting with "/"
   if (l.search && l.search.startsWith('/')) {
     const decoded = l.search
       .slice(1) // remove the initial "/"
       .split('&')
-      .map(s => s.replace(/~and~/g, '&'))
+      .map(s => s.replace(g, '&'))
       .join('?');
 
     const newUrl = l.pathname.replace(/\/$/, '') + '/' + decoded + l.hash;
@@ -19,15 +19,15 @@
     window.history.replaceState(null, null, newUrl);
   }
 })(window.location);
-    </script>
+    </script> -->
     <title>CodeFloor IT Tech</title>
   </head>
   <body>
     <div id="root"></div>
 <script type="module" src="/src/main.jsx"></script>
-   <!-- <script type="text/javascript">
+   <script type="text/javascript">
   (function (l) {
-    if (l.search && l.search.startsWith("?/")
+    if (l.search && l.search.startsWith("/")
     ) {
       var decoded = l.search
         .slice(2)
@@ -43,6 +43,6 @@
       );
     }
   })(window.location);
-</script> -->
+</script>
   </body>
 </html>
