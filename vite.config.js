@@ -1,21 +1,21 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
-    outDir: 'dist', // ✅ Vercel looks for "dist" by default
-    base: '/', // ✅ ensures correct asset paths
+    outDir: 'dist' // ✅ Vercel looks for "dist" automatically
   },
+  base: '/', // ✅ ensures correct relative paths for SPA routing
   server: {
-    port: 5173, // optional, ensures local dev runs correctly
-    open: true, // opens browser automatically
+    port: 5173,
+    open: true
   },
   resolve: {
     alias: {
-      '@': '/src', // ✅ useful for clean imports
-    },
-  },
+      '@': fileURLToPath(new URL('./src', import.meta.url)) // ✅ portable alias
+    }
+  }
 })
-
