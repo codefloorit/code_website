@@ -5,16 +5,20 @@
     <link rel="icon" type="image/svg+xml" href="/assets/logoC-C30yqu12.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript">
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
+     (function (l) {
+  // Only run if there is a search string starting with "/"
+  if (l.search && l.search.startsWith('/')) {
+    const decoded = l.search
+      .slice(1) // remove the initial "/"
+      .split('&')
+      .map(s => s.replace(/~and~/g, '&'))
+      .join('?');
+
+    const newUrl = l.pathname.replace(/\/$/, '') + '/' + decoded + l.hash;
+
+    window.history.replaceState(null, null, newUrl);
+  }
+})(window.location);
     </script>
     <title>CodeFloor IT Tech</title>
     <script type="module" crossorigin src="/assets/index-DmR8h28_.js"></script>
